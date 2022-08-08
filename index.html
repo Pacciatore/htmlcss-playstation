@@ -36,7 +36,8 @@
             </div>
         </div>
 
-        <!-- TODO migliorare l'interfaccia del menu a scomparsa per mobile -->
+        <!-- TODO migliorare l'icona della ricerca nel mobile
+                  far comparire una casella di ricerca al click -->
 
         <!-- Navbar -->
         <nav class="navbar navbar-expand-xl bg-light bg-white pb-0">
@@ -55,8 +56,8 @@
 
                     <!-- Navbar parte sinistra -->
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item dropdown">
-                            <a class="nav-link text-dark fw-bold" href="#" role="button" data-bs-toggle="dropdown"
+                        <li class="nav-item dropdown position-static">
+                            <a class="nav-link fw-bold" href="#" role="button" data-bs-toggle="dropdown"
                                 aria-expanded="false">
                                 Giochi
                                 <span>
@@ -64,18 +65,53 @@
                                     <img src="img/chevron-down-solid-hover.svg" class="d-none" alt="">
                                 </span>
                             </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <ul class="dropdown-menu w-100 border-0 rounded-0 justify-content-center">
                                 <li>
-                                    <hr class="dropdown-divider">
+                                    <ul class="row justify-content-center">
+
+                                        <li class="col-4 col-md-3 col-xl-2 text-center">
+                                            <a class="dropdown-item" href="#">
+                                                <div class="img-container"> <img src="img/play-menu-ico.png"
+                                                        alt="play-menu-ico">
+                                                </div>
+                                                PlayStation 5
+                                            </a>
+                                        </li>
+
+                                        <li class="col-4 col-md-3 col-xl-2 text-center">
+                                            <a class="dropdown-item" href="#">
+                                                <div class="img-container"> <img src="img/play-menu-ico.png"
+                                                        alt="play-menu-ico">
+                                                </div>
+                                                PlayStation 4
+                                            </a>
+                                        </li>
+
+                                        <li class="col-4 col-md-3 col-xl-2 text-center">
+                                            <a class="dropdown-item" href="#">
+                                                <div class="img-container"> <img src="img/play-menu-ico.png"
+                                                        alt="play-menu-ico">
+                                                </div>
+                                                PlayStation 3
+                                            </a>
+                                        </li>
+
+                                    </ul>
                                 </li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                <li class="col-12 p-0">
+                                    <hr class="dropdown-divider w-100">
+                                </li>
+                                <li>
+                                    <ul class="row justify-content-center support-links">
+                                        <li class="col-3 col-md-2 col-xl-1">Link Supporto</li>
+                                        <li class="col-3 col-md-2 col-xl-1">Link Supporto</li>
+                                        <li class="col-3 col-md-2 col-xl-1">Link Supporto</li>
+                                    </ul>
                             </ul>
                         </li>
 
-                        <li class="nav-item dropdown">
-                            <a class="nav-link text-dark fw-bold" href="#" role="button" data-bs-toggle="dropdown"
+                        <li class="nav-item dropdown position-static">
+                            <a class="nav-link fw-bold" href="#" role="button" data-bs-toggle="dropdown"
                                 aria-expanded="false">
                                 Hardware
                                 <span>
@@ -83,18 +119,53 @@
                                     <img src="img/chevron-down-solid-hover.svg" class="d-none" alt="">
                                 </span>
                             </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <ul class="dropdown-menu w-100 border-0 rounded-0 justify-content-center">
                                 <li>
-                                    <hr class="dropdown-divider">
+                                    <ul class="row justify-content-center">
+
+                                        <li class="col-4 col-md-3 col-xl-2 text-center">
+                                            <a class="dropdown-item" href="#">
+                                                <div class="img-container"> <img src="img/play-menu-ico.png"
+                                                        alt="play-menu-ico">
+                                                </div>
+                                                PlayStation 5
+                                            </a>
+                                        </li>
+
+                                        <li class="col-4 col-md-3 col-xl-2 text-center">
+                                            <a class="dropdown-item" href="#">
+                                                <div class="img-container"> <img src="img/play-menu-ico.png"
+                                                        alt="play-menu-ico">
+                                                </div>
+                                                PlayStation 4
+                                            </a>
+                                        </li>
+
+                                        <li class="col-4 col-md-3 col-xl-2 text-center">
+                                            <a class="dropdown-item" href="#">
+                                                <div class="img-container"> <img src="img/play-menu-ico.png"
+                                                        alt="play-menu-ico">
+                                                </div>
+                                                PlayStation 3
+                                            </a>
+                                        </li>
+
+                                    </ul>
                                 </li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                <li class="col-12 p-0">
+                                    <hr class="dropdown-divider w-100">
+                                </li>
+                                <li>
+                                    <ul class="row justify-content-center support-links">
+                                        <li class="col-3 col-md-2 col-xl-1">Link Supporto</li>
+                                        <li class="col-3 col-md-2 col-xl-1">Link Supporto</li>
+                                        <li class="col-3 col-md-2 col-xl-1">Link Supporto</li>
+                                    </ul>
                             </ul>
                         </li>
 
-                        <li class="nav-item dropdown">
-                            <a class="nav-link text-dark fw-bold" href="#" role="button" data-bs-toggle="dropdown"
+                        <li class="nav-item dropdown position-static">
+                            <a class="nav-link fw-bold" href="#" role="button" data-bs-toggle="dropdown"
                                 aria-expanded="false">
                                 Servizi
                                 <span>
@@ -102,18 +173,53 @@
                                     <img src="img/chevron-down-solid-hover.svg" class="d-none" alt="">
                                 </span>
                             </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <ul class="dropdown-menu w-100 border-0 rounded-0 justify-content-center">
                                 <li>
-                                    <hr class="dropdown-divider">
+                                    <ul class="row justify-content-center">
+
+                                        <li class="col-4 col-md-3 col-xl-2 text-center">
+                                            <a class="dropdown-item" href="#">
+                                                <div class="img-container"> <img src="img/play-menu-ico.png"
+                                                        alt="play-menu-ico">
+                                                </div>
+                                                PlayStation 5
+                                            </a>
+                                        </li>
+
+                                        <li class="col-4 col-md-3 col-xl-2 text-center">
+                                            <a class="dropdown-item" href="#">
+                                                <div class="img-container"> <img src="img/play-menu-ico.png"
+                                                        alt="play-menu-ico">
+                                                </div>
+                                                PlayStation 4
+                                            </a>
+                                        </li>
+
+                                        <li class="col-4 col-md-3 col-xl-2 text-center">
+                                            <a class="dropdown-item" href="#">
+                                                <div class="img-container"> <img src="img/play-menu-ico.png"
+                                                        alt="play-menu-ico">
+                                                </div>
+                                                PlayStation 3
+                                            </a>
+                                        </li>
+
+                                    </ul>
                                 </li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                <li class="col-12 p-0">
+                                    <hr class="dropdown-divider w-100">
+                                </li>
+                                <li>
+                                    <ul class="row justify-content-center support-links">
+                                        <li class="col-3 col-md-2 col-xl-1">Link Supporto</li>
+                                        <li class="col-3 col-md-2 col-xl-1">Link Supporto</li>
+                                        <li class="col-3 col-md-2 col-xl-1">Link Supporto</li>
+                                    </ul>
                             </ul>
                         </li>
 
-                        <li class="nav-item dropdown">
-                            <a class="nav-link text-dark fw-bold" href="#" role="button" data-bs-toggle="dropdown"
+                        <li class="nav-item dropdown position-static">
+                            <a class="nav-link fw-bold" href="#" role="button" data-bs-toggle="dropdown"
                                 aria-expanded="false">
                                 Novità
                                 <span>
@@ -121,18 +227,53 @@
                                     <img src="img/chevron-down-solid-hover.svg" class="d-none" alt="">
                                 </span>
                             </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <ul class="dropdown-menu w-100 border-0 rounded-0 justify-content-center">
                                 <li>
-                                    <hr class="dropdown-divider">
+                                    <ul class="row justify-content-center">
+
+                                        <li class="col-4 col-md-3 col-xl-2 text-center">
+                                            <a class="dropdown-item" href="#">
+                                                <div class="img-container"> <img src="img/play-menu-ico.png"
+                                                        alt="play-menu-ico">
+                                                </div>
+                                                PlayStation 5
+                                            </a>
+                                        </li>
+
+                                        <li class="col-4 col-md-3 col-xl-2 text-center">
+                                            <a class="dropdown-item" href="#">
+                                                <div class="img-container"> <img src="img/play-menu-ico.png"
+                                                        alt="play-menu-ico">
+                                                </div>
+                                                PlayStation 4
+                                            </a>
+                                        </li>
+
+                                        <li class="col-4 col-md-3 col-xl-2 text-center">
+                                            <a class="dropdown-item" href="#">
+                                                <div class="img-container"> <img src="img/play-menu-ico.png"
+                                                        alt="play-menu-ico">
+                                                </div>
+                                                PlayStation 3
+                                            </a>
+                                        </li>
+
+                                    </ul>
                                 </li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                <li class="col-12 p-0">
+                                    <hr class="dropdown-divider w-100">
+                                </li>
+                                <li>
+                                    <ul class="row justify-content-center support-links">
+                                        <li class="col-3 col-md-2 col-xl-1">Link Supporto</li>
+                                        <li class="col-3 col-md-2 col-xl-1">Link Supporto</li>
+                                        <li class="col-3 col-md-2 col-xl-1">Link Supporto</li>
+                                    </ul>
                             </ul>
                         </li>
 
-                        <li class="nav-item dropdown">
-                            <a class="nav-link text-dark fw-bold" href="#" role="button" data-bs-toggle="dropdown"
+                        <li class="nav-item dropdown position-static">
+                            <a class="nav-link fw-bold" href="#" role="button" data-bs-toggle="dropdown"
                                 aria-expanded="false">
                                 Fai acquisti
                                 <span>
@@ -140,18 +281,53 @@
                                     <img src="img/chevron-down-solid-hover.svg" class="d-none" alt="">
                                 </span>
                             </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <ul class="dropdown-menu w-100 border-0 rounded-0 justify-content-center">
                                 <li>
-                                    <hr class="dropdown-divider">
+                                    <ul class="row justify-content-center">
+
+                                        <li class="col-4 col-md-3 col-xl-2 text-center">
+                                            <a class="dropdown-item" href="#">
+                                                <div class="img-container"> <img src="img/play-menu-ico.png"
+                                                        alt="play-menu-ico">
+                                                </div>
+                                                PlayStation 5
+                                            </a>
+                                        </li>
+
+                                        <li class="col-4 col-md-3 col-xl-2 text-center">
+                                            <a class="dropdown-item" href="#">
+                                                <div class="img-container"> <img src="img/play-menu-ico.png"
+                                                        alt="play-menu-ico">
+                                                </div>
+                                                PlayStation 4
+                                            </a>
+                                        </li>
+
+                                        <li class="col-4 col-md-3 col-xl-2 text-center">
+                                            <a class="dropdown-item" href="#">
+                                                <div class="img-container"> <img src="img/play-menu-ico.png"
+                                                        alt="play-menu-ico">
+                                                </div>
+                                                PlayStation 3
+                                            </a>
+                                        </li>
+
+                                    </ul>
                                 </li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                <li class="col-12 p-0">
+                                    <hr class="dropdown-divider w-100">
+                                </li>
+                                <li>
+                                    <ul class="row justify-content-center support-links">
+                                        <li class="col-3 col-md-2 col-xl-1">Link Supporto</li>
+                                        <li class="col-3 col-md-2 col-xl-1">Link Supporto</li>
+                                        <li class="col-3 col-md-2 col-xl-1">Link Supporto</li>
+                                    </ul>
                             </ul>
                         </li>
 
-                        <li class="nav-item dropdown">
-                            <a class="nav-link text-dark fw-bold" href="#" role="button" data-bs-toggle="dropdown"
+                        <li class="nav-item dropdown position-static">
+                            <a class="nav-link fw-bold" href="#" role="button" data-bs-toggle="dropdown"
                                 aria-expanded="false">
                                 Supporto
                                 <span>
@@ -159,13 +335,48 @@
                                     <img src="img/chevron-down-solid-hover.svg" class="d-none" alt="">
                                 </span>
                             </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <ul class="dropdown-menu w-100 border-0 rounded-0 justify-content-center">
                                 <li>
-                                    <hr class="dropdown-divider">
+                                    <ul class="row justify-content-center">
+
+                                        <li class="col-4 col-md-3 col-xl-2 text-center">
+                                            <a class="dropdown-item" href="#">
+                                                <div class="img-container"> <img src="img/play-menu-ico.png"
+                                                        alt="play-menu-ico">
+                                                </div>
+                                                PlayStation 5
+                                            </a>
+                                        </li>
+
+                                        <li class="col-4 col-md-3 col-xl-2 text-center">
+                                            <a class="dropdown-item" href="#">
+                                                <div class="img-container"> <img src="img/play-menu-ico.png"
+                                                        alt="play-menu-ico">
+                                                </div>
+                                                PlayStation 4
+                                            </a>
+                                        </li>
+
+                                        <li class="col-4 col-md-3 col-xl-2 text-center">
+                                            <a class="dropdown-item" href="#">
+                                                <div class="img-container"> <img src="img/play-menu-ico.png"
+                                                        alt="play-menu-ico">
+                                                </div>
+                                                PlayStation 3
+                                            </a>
+                                        </li>
+
+                                    </ul>
                                 </li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                <li class="col-12 p-0">
+                                    <hr class="dropdown-divider w-100">
+                                </li>
+                                <li>
+                                    <ul class="row justify-content-center support-links">
+                                        <li class="col-3 col-md-2 col-xl-1">Link Supporto</li>
+                                        <li class="col-3 col-md-2 col-xl-1">Link Supporto</li>
+                                        <li class="col-3 col-md-2 col-xl-1">Link Supporto</li>
+                                    </ul>
                             </ul>
                         </li>
                     </ul>
@@ -174,8 +385,8 @@
                     <div class="nav-dx">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 
-                            <li class="nav-item dropdown">
-                                <a class="nav-link text-dark fw-bold" href="#" role="button" data-bs-toggle="dropdown"
+                            <li class="nav-item dropdown position-static">
+                                <a class="nav-link fw-bold" href="#" role="button" data-bs-toggle="dropdown"
                                     aria-expanded="false">
                                     My PlayStation
                                     <span>
@@ -183,17 +394,52 @@
                                         <img src="img/chevron-down-solid-hover.svg" class="d-none" alt="">
                                     </span>
                                 </a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#">Action</a></li>
-                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <ul class="dropdown-menu w-100 border-0 rounded-0 justify-content-center">
                                     <li>
-                                        <hr class="dropdown-divider">
+                                        <ul class="row justify-content-center">
+
+                                            <li class="col-4 col-md-3 col-xl-2 text-center">
+                                                <a class="dropdown-item" href="#">
+                                                    <div class="img-container"> <img src="img/play-menu-ico.png"
+                                                            alt="play-menu-ico">
+                                                    </div>
+                                                    PlayStation 5
+                                                </a>
+                                            </li>
+
+                                            <li class="col-4 col-md-3 col-xl-2 text-center">
+                                                <a class="dropdown-item" href="#">
+                                                    <div class="img-container"> <img src="img/play-menu-ico.png"
+                                                            alt="play-menu-ico">
+                                                    </div>
+                                                    PlayStation 4
+                                                </a>
+                                            </li>
+
+                                            <li class="col-4 col-md-3 col-xl-2 text-center">
+                                                <a class="dropdown-item" href="#">
+                                                    <div class="img-container"> <img src="img/play-menu-ico.png"
+                                                            alt="play-menu-ico">
+                                                    </div>
+                                                    PlayStation 3
+                                                </a>
+                                            </li>
+
+                                        </ul>
                                     </li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    <li class="col-12 p-0">
+                                        <hr class="dropdown-divider w-100">
+                                    </li>
+                                    <li>
+                                        <ul class="row justify-content-center support-links">
+                                            <li class="col-3 col-md-2 col-xl-1">Link Supporto</li>
+                                            <li class="col-3 col-md-2 col-xl-1">Link Supporto</li>
+                                            <li class="col-3 col-md-2 col-xl-1">Link Supporto</li>
+                                        </ul>
                                 </ul>
                             </li>
 
-                            <li>
+                            <li class="pt-2 pb-4 py-xl-0">
                                 <div class="button-container">
                                     <button type="button"
                                         class="btn btn-secondary tr-bg-dark rounded-pill">Accedi</button>
