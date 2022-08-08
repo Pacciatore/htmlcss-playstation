@@ -33,3 +33,18 @@ body {
 nav ul>* {
     padding: 0 10px;
 }
+
+.navbar-nav span {
+    display: inline-block;
+    margin-left: 5px;
+    width: 10px;
+}
+
+/*** Nav arrows hover manager */
+.navbar-nav a:hover img:first-child {
+    display: none;
+}
+
+.navbar-nav a:hover img:nth-child(2) {
+    display: inline-block !important;
+}
