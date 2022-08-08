@@ -3,6 +3,7 @@
 :root {
     --tr-main-dark: #363636;
     --tr-main-color: #2d64e6;
+    --tr-main-pt-header: 110px;
 }
 
 /**** Utilities  ****/
@@ -47,4 +48,20 @@ nav ul>* {
 
 .navbar-nav a:hover img:nth-child(2) {
     display: inline-block !important;
+}
+
+#jumbotron {
+    padding-top: var(--tr-main-pt-header);
+}
+
+.jumbo-bg-container {
+    background-image: url(../img/jumbo-bg.png);
+    background-size: cover;
+    background-position: top;
+}
+
+
+/* DEBUGGER */
+.debug .jumbo-bg-container {
+    min-height: 500px;
 }
