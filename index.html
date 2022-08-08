@@ -27,7 +27,29 @@
 <body>
 
     <!-- Header fisso parte superiore schermo per logo Sony e navbar -->
-    <header>
+    <header class="position-fixed w-100">
+
+        <!-- Banner nero con scritta Sony -->
+        <div class="sony-name bg-dark row justify-content-end pb-2 pt-1 pe-2">
+            <div class="img-container col-3">
+                <img class="img-fluid" src="img/sony_logo.svg" alt="sony">
+            </div>
+        </div>
+
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg bg-light pb-0">
+            <div class="container-fluid">
+
+                <a class="navbar-brand" href="#">
+                    <img src="img/play_logo.svg" alt="play_logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+        </nav>
 
     </header>
 
