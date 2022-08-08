@@ -94,11 +94,9 @@ nav .dropdown-item:hover {
     background-image: url(../img/jumbo-bg.png);
     background-size: cover;
     background-position: top;
+    height: 675px;
 }
 
 /*#endregion Main  */
 
 /* DEBUGGER */
-.debug .jumbo-bg-container {
-    min-height: 500px;
-}
