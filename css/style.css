@@ -103,6 +103,10 @@ nav .dropdown-item:hover {
     height: 675px;
 }
 
+#jumbotron h3 {
+    font-size: 2.3rem;
+}
+
 /*#endregion Main  */
 
 /* DEBUGGER */
