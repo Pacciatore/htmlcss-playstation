@@ -3,6 +3,8 @@
 :root {
     --tr-main-dark: #363636;
     --tr-main-color: #2d64e6;
+    --tr-custom-orange: #cd3d0f;
+
     --tr-main-pt-header: 110px;
 }
 
@@ -18,6 +20,10 @@
 
 .tr-text-main {
     background-color: var(--tr-main-color);
+}
+
+.tr-bg-orange {
+    background-color: var(--tr-custom-orange);
 }
 
 li>ul {
