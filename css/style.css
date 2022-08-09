@@ -92,6 +92,8 @@ nav .dropdown-item:hover {
 /*#endregion Header  */
 
 /*#region Main  */
+
+/*#region Jumbotron  */
 #jumbotron {
     padding-top: var(--tr-main-pt-header);
 }
@@ -106,6 +108,24 @@ nav .dropdown-item:hover {
 #jumbotron h3 {
     font-size: 2.3rem;
 }
+
+/*** Jumbotron hover ***/
+
+/* 
+TODO capire come fare outline transition fluida
+#jumbotron button {
+    transition: outline 1s, border 1s;
+    outline-color: var(--tr-custom-orange);
+} */
+
+#jumbotron button:hover {
+    background-color: var(--tr-custom-orange);
+    outline: solid var(--tr-custom-orange);
+    outline-offset: 2px;
+    border: 2px solid black;
+}
+
+/*#endregion Jumbotron  */
 
 /*#endregion Main  */
 
