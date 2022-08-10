@@ -6,6 +6,8 @@
     --tr-custom-orange: #cd3d0f;
 
     --tr-main-pt-header: 110px;
+
+    --tr-transition-short: 0.35s;
 }
 
 /**** Utilities  ****/
@@ -140,7 +142,7 @@ TODO capire come fare outline transition fluida
     position: relative;
     bottom: 0;
 
-    transition: bottom 0.35s;
+    transition: bottom var(--tr-transition-short);
 }
 
 #game-cards img:hover {
@@ -159,6 +161,10 @@ TODO capire come fare outline transition fluida
     outline: solid var(--tr-main-color);
     outline-offset: 2px;
     border: 2px solid white;
+}
+
+#ps5-presentation .element-selection>* {
+    transition: opacity var(--tr-transition-short);
 }
 
 #ps5-presentation .element-selection>*:hover {
