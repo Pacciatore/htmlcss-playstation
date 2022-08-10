@@ -154,7 +154,19 @@ TODO capire come fare outline transition fluida
 
 /*#region PS5 Presentation  */
 
+#ps5-presentation button:hover {
+    background-color: var(--tr-main-color);
+    outline: solid var(--tr-main-color);
+    outline-offset: 2px;
+    border: 2px solid white;
+}
 
+#ps5-presentation .element-selection>*:hover {
+    opacity: 1 !important;
+
+    border-bottom: 2px solid var(--tr-main-color);
+    margin-bottom: -2px;
+}
 
 /*#endregion PS5 Presentation  */
 
