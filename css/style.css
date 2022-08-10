@@ -127,6 +127,26 @@ TODO capire come fare outline transition fluida
 
 /*#endregion Jumbotron  */
 
+/*#region Game Cards  */
+
+#game-cards img {
+    /* Attribuzione del position per poter
+        usare transition in hover */
+    position: relative;
+    bottom: 0;
+
+    transition: bottom 0.35s;
+}
+
+#game-cards img:hover {
+    outline: solid var(--tr-main-color) 2px;
+    outline-offset: 2px;
+
+    bottom: 15px;
+}
+
+/*#endregion Game Cards  */
+
 /*#endregion Main  */
 
 /* DEBUGGER */
