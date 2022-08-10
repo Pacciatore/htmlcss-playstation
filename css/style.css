@@ -19,7 +19,7 @@
 }
 
 .tr-text-main {
-    background-color: var(--tr-main-color);
+    color: var(--tr-main-color);
 }
 
 .tr-bg-orange {
@@ -37,6 +37,11 @@ body {
 }
 
 /*#region Header */
+
+header {
+    z-index: 100;
+}
+
 .sony-name img {
     width: 105px;
 }
@@ -146,6 +151,12 @@ TODO capire come fare outline transition fluida
 }
 
 /*#endregion Game Cards  */
+
+/*#region PS5 Presentation  */
+
+
+
+/*#endregion PS5 Presentation  */
 
 /*#endregion Main  */
 
