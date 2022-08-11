@@ -32,6 +32,34 @@ li>ul {
     padding: 0;
 }
 
+/**** Shared ****/
+
+#jumbotron h3,
+#it-takes-two-presentation h3 {
+    font-size: 2.3rem;
+}
+
+/** Hovers **/
+
+/* 
+TODO capire come fare outline transition fluida
+#jumbotron button {
+    transition: outline 1s, border 1s;
+    outline-color: var(--tr-custom-orange);
+} */
+
+button:not(nav button):hover {
+    outline-offset: 2px;
+}
+
+.jumbo-bg-container button:hover {
+    background-color: var(--tr-custom-orange);
+    outline: solid var(--tr-custom-orange);
+}
+
+
+
+
 /**** Content ****/
 
 body {
@@ -105,31 +133,14 @@ nav .dropdown-item:hover {
     padding-top: var(--tr-main-pt-header);
 }
 
+/* TODO creare -tr-bg-container e sostituire
+    questo con #jumbotron>.-tr-bg-container 
+    Stessa cosa per .it-takes-two */
 .jumbo-bg-container {
     background-image: url(../img/jumbo-bg.png);
     background-size: cover;
     background-position: top;
-    height: 675px;
-}
-
-#jumbotron h3 {
-    font-size: 2.3rem;
-}
-
-/*** Jumbotron hover ***/
-
-/* 
-TODO capire come fare outline transition fluida
-#jumbotron button {
-    transition: outline 1s, border 1s;
-    outline-color: var(--tr-custom-orange);
-} */
-
-#jumbotron button:hover {
-    background-color: var(--tr-custom-orange);
-    outline: solid var(--tr-custom-orange);
-    outline-offset: 2px;
-    border: 2px solid black;
+    min-height: 675px;
 }
 
 /*#endregion Jumbotron  */
@@ -159,8 +170,6 @@ TODO capire come fare outline transition fluida
 #ps5-presentation button:hover {
     background-color: var(--tr-main-color);
     outline: solid var(--tr-main-color);
-    outline-offset: 2px;
-    border: 2px solid white;
 }
 
 #ps5-presentation .element-selection>* {
@@ -175,6 +184,14 @@ TODO capire come fare outline transition fluida
 }
 
 /*#endregion PS5 Presentation  */
+
+/*#region It Takes Two Presentation  */
+
+#it-takes-two-presentation>.jumbo-bg-container {
+    background-image: url(../img/it-takes-two-hero-banner-desktop.jpg);
+}
+
+/*#endregion It Takes Two Presentation  */
 
 /*#endregion Main  */
 
