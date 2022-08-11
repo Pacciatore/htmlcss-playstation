@@ -53,7 +53,7 @@ li>ul {
     position: relative;
     bottom: 0;
 
-    transition: bottom var(--tr-transition-short);
+    transition: bottom var(--tr-transition-short), box-shadow var(--tr-transition-short);
 }
 
 /** Hovers **/
@@ -197,7 +197,8 @@ nav .dropdown-item:hover {
 }
 
 #new-releases img:hover {
-    outline-color: white;
+    outline-color: transparent;
+    box-shadow: 0 11px 10px 3px;
 }
 
 /*#endregion New Releases  */
