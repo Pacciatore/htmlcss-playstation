@@ -3,6 +3,7 @@
 :root {
     --tr-main-dark: #363636;
     --tr-main-color: #2d64e6;
+    --tr-main-color-dark: #161c3b;
     --tr-custom-orange: #cd3d0f;
     --tr-custom-beige: #bebcbb;
 
@@ -22,6 +23,10 @@
     background-color: var(--tr-main-color);
 }
 
+.tr-bg-main-dark {
+    background-color: var(--tr-main-color-dark);
+}
+
 .tr-text-main {
     color: var(--tr-main-color);
 }
@@ -36,6 +41,13 @@
 
 li>ul {
     padding: 0;
+}
+
+.tr-presentation img:not(:first-child) {
+    top: 0;
+    right: 0;
+    max-height: 100%;
+    max-width: max-content;
 }
 
 /**** Shared ****/
@@ -242,17 +254,6 @@ nav .dropdown-item:hover {
 }
 
 /*#endregion PS4 Presentation  */
-
-/*#region PS Plus Presentation  */
-
-#ps-plus-presentation img:not(:first-child) {
-    top: 0;
-    right: 0;
-    max-height: 100%;
-    max-width: max-content;
-}
-
-/*#endregion PS Plus Presentation  */
 
 /*#endregion Main  */
 
