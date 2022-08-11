@@ -6,6 +6,7 @@
     --tr-custom-orange: #cd3d0f;
 
     --tr-main-pt-header: 110px;
+    --tr-border-small: 2px;
 
     --tr-transition-short: 0.35s;
 }
@@ -46,6 +47,14 @@ li>ul {
     min-height: 675px;
 }
 
+.game-cards-container img {
+    /* Attribuzione del position per poter
+        usare transition in hover */
+    position: relative;
+    bottom: 0;
+
+    transition: bottom var(--tr-transition-short);
+}
 
 /** Hovers **/
 
@@ -57,12 +66,19 @@ TODO capire come fare outline transition fluida
 } */
 
 button:not(nav button):hover {
-    outline-offset: 2px;
+    outline-offset: var(--tr-border-small);
 }
 
 .jumbo-bg-container button:hover {
     background-color: var(--tr-custom-orange);
     outline: solid var(--tr-custom-orange);
+}
+
+.game-cards-container img:hover {
+    outline: solid var(--tr-border-small);
+    outline-offset: var(--tr-border-small);
+
+    bottom: 15px;
 }
 
 
@@ -73,7 +89,7 @@ body {
 }
 
 main {
-    padding-top: 110px;
+    padding-top: var(--tr-main-pt-header);
 }
 
 /*#region Header */
@@ -140,20 +156,8 @@ nav .dropdown-item:hover {
 
 /*#region Game Cards  */
 
-#game-cards img {
-    /* Attribuzione del position per poter
-        usare transition in hover */
-    position: relative;
-    bottom: 0;
-
-    transition: bottom var(--tr-transition-short);
-}
-
 #game-cards img:hover {
-    outline: solid var(--tr-main-color) 2px;
-    outline-offset: 2px;
-
-    bottom: 15px;
+    outline-color: var(--tr-main-color);
 }
 
 /*#endregion Game Cards  */
@@ -172,8 +176,8 @@ nav .dropdown-item:hover {
 #ps5-presentation .element-selection>*:hover {
     opacity: 1 !important;
 
-    border-bottom: 2px solid var(--tr-main-color);
-    margin-bottom: -2px;
+    border-bottom: var(--tr-border-small) solid var(--tr-main-color);
+    margin-bottom: calc(-1 * var(--tr-border-small));
 }
 
 /*#endregion PS5 Presentation  */
@@ -185,6 +189,18 @@ nav .dropdown-item:hover {
 }
 
 /*#endregion It Takes Two Presentation  */
+
+/*#region New Releases  */
+
+#new-releases {
+    background-color: #363636;
+}
+
+#new-releases img:hover {
+    outline-color: white;
+}
+
+/*#endregion New Releases  */
 
 /*#endregion Main  */
 
