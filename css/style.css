@@ -81,6 +81,12 @@ button:not(nav button):hover {
     bottom: 15px;
 }
 
+#ps5-presentation button:hover:not(.carousel-indicators>button),
+#ps4-presentation button:hover {
+    background-color: var(--tr-main-color);
+    outline: solid var(--tr-main-color);
+}
+
 
 /**** Content ****/
 
@@ -163,11 +169,6 @@ nav .dropdown-item:hover {
 /*#endregion Game Cards  */
 
 /*#region PS5 Presentation  */
-
-#ps5-presentation button:hover:not(.carousel-indicators>button) {
-    background-color: var(--tr-main-color);
-    outline: solid var(--tr-main-color);
-}
 
 /* Carosello */
 
