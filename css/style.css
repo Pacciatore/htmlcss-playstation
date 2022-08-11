@@ -164,20 +164,40 @@ nav .dropdown-item:hover {
 
 /*#region PS5 Presentation  */
 
-#ps5-presentation button:hover {
+#ps5-presentation button:hover:not(.carousel-indicators>button) {
     background-color: var(--tr-main-color);
     outline: solid var(--tr-main-color);
 }
 
-#ps5-presentation .element-selection>* {
-    transition: opacity var(--tr-transition-short);
+/* Carosello */
+
+#ps5-presentation .carousel-inner .carousel-item:nth-child(3) {
+    padding: 30px;
 }
 
-#ps5-presentation .element-selection>*:hover {
-    opacity: 1 !important;
+#ps5-presentation .carousel-indicators>button {
+    transition: opacity var(--tr-transition-short), background-color var(--tr-transition-short);
+}
 
+#ps5-presentation .carousel-indicators>button:hover,
+#ps5-presentation .carousel-indicators>button.active {
+    opacity: 1;
+
+    background-color: transparent;
     border-bottom: var(--tr-border-small) solid var(--tr-main-color);
-    margin-bottom: calc(-1 * var(--tr-border-small));
+}
+
+#ps5-presentation .carousel-indicators {
+    position: absolute;
+    margin: 0;
+}
+
+#ps5-presentation .carousel-indicators>button {
+    background-color: white;
+    height: 250px;
+    width: 41.66666667%;
+    margin-right: calc(var(--bs-gutter-x) * .5);
+    margin-left: calc(var(--bs-gutter-x) * .5);
 }
 
 /*#endregion PS5 Presentation  */
@@ -206,3 +226,7 @@ nav .dropdown-item:hover {
 /*#endregion Main  */
 
 /* DEBUGGER */
+
+.debug #ps5-presentation .carousel-indicators>button {
+    background-color: #cd3d0f;
+}
