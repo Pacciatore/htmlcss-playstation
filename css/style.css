@@ -223,6 +223,20 @@ nav .dropdown-item:hover {
 
 /*#endregion New Releases  */
 
+/*#region PS4 Presentation  */
+
+#ps4-presentation h3>span {
+    padding-right: 5px;
+}
+
+#ps4-presentation h3>span::after {
+    content: '\00AE';
+    font-size: small;
+    position: absolute
+}
+
+/* /*#endregion PS4 Presentation  */
+
 /*#endregion Main  */
 
 /* DEBUGGER */
